@@ -1,0 +1,16 @@
+/* Lato */
+
+@font-face{
+    font-family: 'Lato Regular';
+    src: url('fonts/Lato/Regular/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Lato Bold';
+    src: url('fonts/Lato/Bold/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Lato Black';
+    src: url('fonts/Lato/Bold/Lato-Black.ttf') format('truetype');
+}

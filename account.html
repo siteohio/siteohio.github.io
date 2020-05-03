@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Personal Information</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="account">
+    <header class="header">
+        <div class="container_wide">
+            <div class="header__logo">
+                <a class="header__recars" href="#">
+                    <img src="assets/logo/logo.svg" alt="Recars" class="header__recars">
+                </a>
+                <div class="input__wrap">
+                    <div class="input-dropdown_lang input-dropdown">
+                        <img src="assets/flag/usa.svg" alt="The USA" class="input-dropdown__flag">
+                        <p class="input-dropdown__text">EN</p>
+                        <img src="assets/icon/angle-down.svg" alt="Arrows"
+                            class="input-dropdown__arrows_lang input-dropdown__arrows">
+                    </div>
+                    <div class="input-drop">
+                        <div class="input-drop__item">
+                            <img src="assets/flag/usa.svg" alt="The USA" class="input-drop__flag">
+                            <p class="input-drop__text">EN</p>
+                        </div>
+                        <div class="input-drop__item">
+                            <img src="assets/flag/italy.svg" alt="Italy" class="input-drop__flag">
+                            <p class="input-drop__text">IT</p>
+                        </div>
+                        <div class="input-drop__item">
+                            <img src="assets/flag/france.svg" alt="France" class="input-drop__flag">
+                            <p class="input-drop__text">FR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="car.html">Car</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="mail.html">Verification</a></li>
+                    <li><a href="sign.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="header__profile">
+                <img src="assets/icon/bell.svg" alt="Bell" class="header__bell">
+                <div class="header__cart">
+                    <img src="assets/icon/cart.svg" alt="Cart">
+                    <span>1</span>
+                </div>
+                <div class="header__avatar">
+                    <img src="assets/avatar/man1.png" alt="Man">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="block">
+                <h3 class="block__title">Account</h3>
+                <div class="account block__cont">
+                    <a href="#" class="active account__link">
+                        <img src="assets/icon/account/user.svg" alt="Personal Information" class="account__icon">
+                        <p class="account__text">Personal Information</p>
+                    </a>
+                    <a href="#" class="account__link">
+                        <img src="assets/icon/account/security.svg" alt="Login & Password" class="account__icon">
+                        <p class="account__text">Login & Password</p>
+                    </a>
+                    <a href="#" class="account__link">
+                        <img src="assets/icon/account/card.svg" alt="Membership Settings" class="account__icon">
+                        <p class="account__text">Membership Settings</p>
+                    </a>
+                    <a href="#" class="account__link">
+                        <img src="assets/icon/account/log-out.svg" alt="Log Out" class="account__icon">
+                        <p class="account__text">Log Out</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="block">
+                <h3 class="block__title">Personal Information</h3>
+                <div class="personal-information block__cont">
+                    <div class="info section">
+                        <div class="info__avatar">
+                            <img src="assets/avatar/man1.png" alt="Avatar" class="info__img">
+                            <div class="info__wrap">
+                                <h3 class="info__name">Vladimir Raksha</h3>
+                                <a href="#" class="info__change">Change Avatar</a>
+                            </div>
+                        </div>
+                        <a href="#" class="info__membership btn btn_blue">Premium Membership</a>
+                    </div>
+                    <div class="account-info section">
+                        <strong>Account Information</strong>
+                        <form class="account-info__form">
+                            <div class="account-info__wrap">
+                                <label class="account-info__type">
+                                    <input name="radio" type="radio">
+                                    <div>
+                                        <span class="account-info__radio"></span>
+                                        <p class="account-info__name">Person Account</p>
+                                        <p class="account-info__des">A single type of use</p>
+                                    </div>
+                                    <img src="assets/vector/person.svg" alt="Person Account">
+                                </label>
+                                <div class="input-wrap">
+                                    <p class="input-title">First Name</p>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="account-info__wrap">
+                                <label class="account-info__type">
+                                    <input name="radio" type="radio">
+                                    <div>
+                                        <span class="account-info__radio"></span>
+                                        <p class="account-info__name">Company Account</p>
+                                        <p class="account-info__des">Multiple account use</p>
+                                    </div>
+                                    <img src="assets/vector/people.svg" alt="Company Account">
+                                </label>
+                                <div class="input-wrap">
+                                    <p class="input-title">Last Name</p>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="physical-addr section">
+                        <strong>Physical Address</strong>
+                        <div class="physical-addr__cont">
+                            <div class="input__wrap">
+                                <p class="input-title">Country</p>
+                                <div class="input-dropdown">
+                                    <img src="assets/flag/usa.svg" alt="The USA" class="input-dropdown__flag">
+                                    <p class="input-dropdown__text">United States</p>
+                                    <img src="assets/icon/arrow-double.svg" alt="Arrows" class="input-dropdown__arrows">
+                                </div>
+                                <div class="input-drop">
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/usa.svg" alt="The USA" class="input-drop__flag">
+                                        <p class="input-drop__text">United States</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/italy.svg" alt="Italy" class="input-drop__flag">
+                                        <p class="input-drop__text">Italy</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/france.svg" alt="France" class="input-drop__flag">
+                                        <p class="input-drop__text">France</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <p class="input-title">City</p>
+                                <div class="input-dropdown">
+                                    <p class="input-dropdown__text">New-York</p>
+                                    <img src="assets/icon/arrow-double.svg" alt="Arrows" class="input-dropdown__arrows">
+                                </div>
+                                <div class="input-drop">
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">New-York</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">Los-Angeles</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">Las-Vegas</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">San-Francisco</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">San-Diego</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="physical-addr__cont">
+                            <div class="input__wrap">
+                                <div class="input-wrap">
+                                    <p class="input-title">Address</p>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <div class="input-wrap">
+                                    <p class="input-title">Postal Code</p>
+                                    <input type="text" class="input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="physical-addr__cont">
+                            <div class="input__wrap_full input__wrap">
+                                <p class="input-wrap input-title">Phone Number</p>
+                                <div class="input-dropdown">
+                                    <img src="assets/flag/usa.svg" alt="The USA" class="input-dropdown__flag">
+                                    <p class="input-dropdown__text">232-850-4511</p>
+                                    <img src="assets/icon/arrow-double.svg" alt="Arrows" class="input-dropdown__arrows">
+                                </div>
+                                <div class="input-drop">
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/usa.svg" alt="The USA" class="input-drop__flag">
+                                        <p class="input-drop__text">232-850-4511</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/italy.svg" alt="Italy" class="input-drop__flag">
+                                        <p class="input-drop__text">123-456-789</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/france.svg" alt="France" class="input-drop__flag">
+                                        <p class="input-drop__text">9-876-5-4321</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-curr section">
+                        <strong>Language & Currency</strong>
+                        <div class="physical-addr__cont">
+                            <div class="input__wrap">
+                                <p class="input-title">Default Language</p>
+                                <div class="input-dropdown">
+                                    <p class="input-dropdown__text">English</p>
+                                    <img src="assets/icon/arrow-double.svg" alt="Arrows" class="input-dropdown__arrows">
+                                </div>
+                                <div class="input-drop">
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">English</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">Italian</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <p class="input-drop__text">French</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input__wrap">
+                                <p class="input-title">Default Currency</p>
+                                <div class="input-dropdown">
+                                    <p class="input-dropdown__text">USD</p>
+                                    <img src="assets/icon/arrow-double.svg" alt="Arrows" class="input-dropdown__arrows">
+                                </div>
+                                <div class="input-drop">
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/usa.svg" alt="The USA" class="input-drop__flag">
+                                        <p class="input-drop__text">USD</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/italy.svg" alt="Italy" class="input-drop__flag">
+                                        <p class="input-drop__text">EUR</p>
+                                    </div>
+                                    <div class="input-drop__item">
+                                        <img src="assets/flag/france.svg" alt="France" class="input-drop__flag">
+                                        <p class="input-drop__text">EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notifications section">
+                        <strong>Notifications</strong>
+                        <label class="notifications__wrap">
+                            <input type="checkbox" name="checkbox">
+                            <span class="notifications__check">
+                                <img src="assets/icon/check.svg" alt="Check">
+                            </span>
+                            <p class="notifications__text">I want to receive ReCars's emails</p>
+                        </label>
+                        <label class="notifications__wrap">
+                            <input type="checkbox" name="checkbox">
+                            <span class="notifications__check">
+                                <img src="assets/icon/check.svg" alt="Check">
+                            </span>
+                            <p class="notifications__text">Push Notifications</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="after-block">
+                <a href="#" class="btn_o btn">Cancel</a>
+                <div class="after-block__wrap">
+                    <svg width="16" height="16" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.28285 5.84852L7.88285 1.24852C8.03905 1.09232 8.03905 0.839044 7.88285 0.682844L7.31717 0.117169C7.16097 -0.0390562 6.9077 -0.0390562 6.75147 0.117169L3 3.86862L1.24853 2.11714C1.09232 1.96094 0.83905 1.96094 0.682825 2.11714L0.11715 2.68282C-0.03905 2.83902 -0.03905 3.09229 0.11715 3.24849L2.71715 5.84849C2.87337 6.00472 3.12663 6.00472 3.28285 5.84852Z"
+                            fill="#16D761" />
+                    </svg>
+                    <p class="after-block__text">All Changes Saved</p>
+                    <a href="#" class="btn">Save Changes</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

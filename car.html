@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Page</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="car">
+    <header class="header">
+        <div class="container_wide">
+            <div class="header__logo">
+                <a class="header__recars" href="#">
+                    <img src="assets/logo/logo.svg" alt="Recars" class="header__recars">
+                </a>
+                <div class="input__wrap">
+                    <div class="input-dropdown_lang input-dropdown">
+                        <img src="assets/flag/usa.svg" alt="The USA" class="input-dropdown__flag">
+                        <p class="input-dropdown__text">EN</p>
+                        <img src="assets/icon/angle-down.svg" alt="Arrows"
+                            class="input-dropdown__arrows_lang input-dropdown__arrows">
+                    </div>
+                    <div class="input-drop">
+                        <div class="input-drop__item">
+                            <img src="assets/flag/usa.svg" alt="The USA" class="input-drop__flag">
+                            <p class="input-drop__text">EN</p>
+                        </div>
+                        <div class="input-drop__item">
+                            <img src="assets/flag/italy.svg" alt="Italy" class="input-drop__flag">
+                            <p class="input-drop__text">IT</p>
+                        </div>
+                        <div class="input-drop__item">
+                            <img src="assets/flag/france.svg" alt="France" class="input-drop__flag">
+                            <p class="input-drop__text">FR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="car.html">Car</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="mail.html">Verification</a></li>
+                    <li><a href="sign.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="header__profile">
+                <a href="#" class="header__demo">Try a Demo</a>
+                <a href="#" class="btn_o btn">Log In</a>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="crumbs">
+            <a href="#" class="crumbs__item">Browse</a>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                    fill="white" fill-opacity="0.01" />
+                <mask id="mask21" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6" height="10">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                        fill="white" />
+                </mask>
+                <g mask="url(#mask21)">
+                    <rect width="16" height="16" fill="#7F8FA4" />
+                </g>
+            </svg>
+            <a href="#" class="crumbs__item">Porsche</a>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                    fill="white" fill-opacity="0.01" />
+                <mask id="mask22" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6" height="10">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                        fill="white" />
+                </mask>
+                <g mask="url(#mask22)">
+                    <rect width="16" height="16" fill="#7F8FA4" />
+                </g>
+            </svg>
+            <a href="#" class="crumbs__item active">Vehicle Details</a>
+        </div>
+    </div>
+    <section class="car-info">
+        <div class="container">
+            <div class="wrap wrap_o car-info__left">
+                <div class="car-info__wrap">
+                    <div class="car-carousel">
+                        <div class="car-carousel__top">
+                            <a href="#" class="btn_small btn">New Car</a>
+                            <a href="#" class="cars__wish">
+                                <svg width="15" height="15" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask23" width="12" height="12">
+                                        <path
+                                            d="M6.40438 2.71801L5.99997 3.12974L5.59556 2.71801C4.61897 1.72376 3.0589 1.60396 2.0711 2.43624C0.853665 3.46102 0.855868 5.24725 1.88573 6.29824L5.60707 10.0896C5.71347 10.1981 5.85224 10.2569 5.99997 10.2569C6.15078 10.2569 6.28714 10.1996 6.39311 10.0915L10.1135 6.30108C11.1436 5.24788 11.147 3.46199 9.92893 2.43632C8.9404 1.60527 7.38016 1.72459 6.40438 2.71801Z"
+                                            fill="none" stroke="#fff" />
+                                    </mask>
+                                    <g mask="url(#mask23)">
+                                        <rect width="12" height="12" fill="white" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="car-carousel__arrows">
+                            <a href="#" class="car-carousel__arrow_left car-carousel__arrow">
+                                <img src="assets/icon/angle-left.svg" alt="Arrow">
+                            </a>
+                            <a href="#" class="car-carousel__arrow_right car-carousel__arrow">
+                                <img src="assets/icon/angle-right.svg" alt="Arrow">
+                            </a>
+                        </div>
+                        <div class="car-carousel__bottom">
+                            <img src="assets/icon/img.svg" alt="Image">
+                            <p>1 of 6</p>
+                        </div>
+                    </div>
+                    <div class="car-info__wrap_inner">
+                        <div class="car-info__slides">
+                            <img src="assets/img/car-carousel2.png" alt="Car">
+                            <img src="assets/img/car-carousel3.png" alt="Car">
+                            <img src="assets/img/car-carousel4.png" alt="Car">
+                            <img src="assets/img/car-carousel5.png" alt="Car">
+                            <img src="assets/img/car-carousel6.png" alt="Car">
+                        </div>
+                        <div class="technical-specs">
+                            <h3 class="car-info__title">Technical Specs</h3>
+                            <div class="params">
+                                <div class="params__left">
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/tool.svg" alt="Design & cylinders">
+                                            <p>Design & cylinders</p>
+                                        </div>
+                                        <p>Twin-turbocharged boxer 6</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/engine.svg" alt="Engine">
+                                            <p>Engine</p>
+                                        </div>
+                                        <p>3.0L</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/width.svg" alt="Width">
+                                            <p>Width</p>
+                                        </div>
+                                        <p>72.9 in</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/ruler.svg" alt="Length">
+                                            <p>Length</p>
+                                        </div>
+                                        <p>177.9 in</p>
+                                    </div>
+                                </div>
+                                <div class="params__right">
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/speedometer.svg" alt="Acceleration">
+                                            <p>Acceleration</p>
+                                        </div>
+                                        <p>3.5 sec</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/helmet.svg" alt="Top Speed">
+                                            <p>Top Speed</p>
+                                        </div>
+                                        <p>190 mph</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/tank.svg" alt="Fuel tank">
+                                            <p>Fuel tank</p>
+                                        </div>
+                                        <p>17.6 gal</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/loc.svg" alt="Principal Location">
+                                            <p>Principal Location</p>
+                                        </div>
+                                        <p>Germany</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn_tag">Shore More</a>
+                        </div>
+                        <div class="pros-cons">
+                            <h3 class="car-info__title">Pros & Cons</h3>
+                            <div class="params">
+                                <div class="params__left">
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/plus.svg" alt="Great looks">
+                                        </div>
+                                        <p>Great looks</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/plus.svg" alt="Brilliant to drive">
+                                        </div>
+                                        <p>Brilliant to drive</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/plus.svg" alt="Practical… for a sports car">
+                                        </div>
+                                        <p>Practical… for a sports car</p>
+                                    </div>
+                                </div>
+                                <div class="params__right">
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/minus.svg" alt="Still not that practical">
+                                        </div>
+                                        <p>Still not that practical</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/minus.svg" alt="Expensive to buy">
+                                        </div>
+                                        <p>Expensive to buy</p>
+                                    </div>
+                                    <div class="params__param">
+                                        <div class="params__name">
+                                            <img src="assets/icon/minus.svg" alt="High running costs">
+                                        </div>
+                                        <p>High running costs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recars-score">
+                            <div class="car-info__title-wrap car-info__title">
+                                <h3>ReCars Score</h3>
+                                <img src="assets/icon/question.svg" alt="Score">
+                            </div>
+                            <div class="recars-score__wrap">
+                                <div class="recars-score__block_good recars-score__block_one recars-score__block">
+                                    <p class="recars-score__points">
+                                        <span>9.2</span> / 10
+                                    </p>
+                                    <p class="recars-score__name">Quality</p>
+                                    <div class="recars-score__progress"></div>
+                                    <p class="recars-score__review">Very Good</p>
+                                </div>
+                                <div class="recars-score__block_low recars-score__block_two recars-score__block">
+                                    <p class="recars-score__points">
+                                        <span>6.4</span> / 10
+                                    </p>
+                                    <p class="recars-score__name">Price</p>
+                                    <div class="recars-score__progress"></div>
+                                    <p class="recars-score__review">Too Expensive</p>
+                                </div>
+                                <div class="recars-score__block_good recars-score__block_three recars-score__block">
+                                    <p class="recars-score__points">
+                                        <span>9.2</span> / 10
+                                    </p>
+                                    <p class="recars-score__name">Interior</p>
+                                    <div class="recars-score__progress"></div>
+                                    <p class="recars-score__review">Very Good</p>
+                                </div>
+                                <div class="recars-score__block_good recars-score__block_four recars-score__block">
+                                    <p class="recars-score__points">
+                                        <span>9.2</span> / 10
+                                    </p>
+                                    <p class="recars-score__name">Exterior</p>
+                                    <div class="recars-score__progress"></div>
+                                    <p class="recars-score__review">Very Good</p>
+                                </div>
+                                <div class="recars-score__block_excellent recars-score__block_five recars-score__block">
+                                    <p class="recars-score__points">
+                                        <span>9.9</span> / 10
+                                    </p>
+                                    <p class="recars-score__name">Performance</p>
+                                    <div class="recars-score__progress"></div>
+                                    <p class="recars-score__review">Excellent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="car-info__right">
+                <div class="car-main wrap">
+                    <div class="car-main__top">
+                        <h2 class="car-main__title">Porsche 911 Carrera 4S 2019</h2>
+                        <div class="car-main__tags">
+                            <a href="#" class="btn_small btn btn_tag">Coupe</a>
+                            <a href="#" class="btn_small btn btn_tag">New Vehicle</a>
+                            <a href="#" class="btn_small btn btn_tag">Buy Now</a>
+                            <a href="#" class="btn_small btn btn_tag">Brand Offer</a>
+                        </div>
+                    </div>
+                    <div class="car-main__info">
+                        <h3 class="car-main__title">Timeless Machine</h3>
+                        <p class="car-main__text">
+                            The new 911 is the sum of its predecessors – and is therefore a
+                            reflection of the past and a vision of the future. The silhouette: iconic. The design:
+                            timeless. The technology: inspired by great racing victories and always one step ahead. With
+                            the eighth generation of the 911, we’re driving into the future.</p>
+                    </div>
+                    <div class="car-main__btns">
+                        <a href="#" class="btn btn_green">Check Options</a>
+                        <a href="#" class="btn btn_tag">From: $113,300</a>
+                    </div>
+                    <div class="car-main__reviews">
+                        <img src="assets/logo/porsche.png" alt="Porsche">
+                        <div class="quality">
+                            <div class="quality__stars">
+                                <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                        fill="#E1E8EE" />
+                                </svg>
+                                <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                        fill="#E1E8EE" />
+                                </svg>
+                                <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                        fill="#E1E8EE" />
+                                </svg>
+                                <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                        fill="#E1E8EE" />
+                                </svg>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                        fill="#E1E8EE" />
+                                </svg>
+                            </div>
+                            <p class="quality__reviews">(423 Reviews)</p>
+                            <img src="assets/icon/verify.svg" alt="Verified" class="quality__verify">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-banner car-banner_one wrap">
+                    <div class="car-banner__info">
+                        <h2 class="car-banner__title">Exterior Design</h2>
+                        <p class="car-banner__text">Exterior of the the new Porsche</p>
+                    </div>
+                    <a href="#">
+                        <img src="assets/icon/arrow-right.svg" alt="Arrow">
+                    </a>
+                </div>
+                <div class="car-banner car-banner_two wrap">
+                    <div class="car-banner__info">
+                        <h2 class="car-banner__title">Interior Design</h2>
+                        <p class="car-banner__text">Interior of the the new Porsche</p>
+                    </div>
+                    <a href="#">
+                        <img src="assets/icon/arrow-right.svg" alt="Arrow">
+                    </a>
+                </div>
+                <div class="car-banner car-banner_three wrap">
+                    <div class="car-banner__info">
+                        <h2 class="car-banner__title">Performance</h2>
+                        <p class="car-banner__text">Feel the performance of the new Porsche</p>
+                    </div>
+                    <a href="#">
+                        <img src="assets/icon/arrow-right.svg" alt="Arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section car-reviews">
+        <div class="container">
+            <div class="top-wrap">
+                <div class="title">
+                    <h2 class="title_main">Car Reviews</h2>
+                    <span>(23)</span>
+                </div>
+                <div class="top-arrows">
+                    <a href="#" class="top-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.44488 7.65015L9.4504 3.64484C9.64352 3.45172 9.95679 3.45172 10.1499 3.64484L10.6171 4.11206C10.81 4.30497 10.8102 4.61741 10.6179 4.81073L7.44342 7.9999L10.6177 11.1893C10.8102 11.3826 10.8098 11.695 10.6169 11.8879L10.1497 12.3552C9.95658 12.5483 9.64331 12.5483 9.4502 12.3552L5.44488 8.34965C5.25177 8.15653 5.25177 7.84326 5.44488 7.65015Z"
+                                fill="white" fill-opacity="0.01" />
+                            <mask id="mask24" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6"
+                                height="10">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.44488 7.65015L9.4504 3.64484C9.64352 3.45172 9.95679 3.45172 10.1499 3.64484L10.6171 4.11206C10.81 4.30497 10.8102 4.61741 10.6179 4.81073L7.44342 7.9999L10.6177 11.1893C10.8102 11.3826 10.8098 11.695 10.6169 11.8879L10.1497 12.3552C9.95658 12.5483 9.64331 12.5483 9.4502 12.3552L5.44488 8.34965C5.25177 8.15653 5.25177 7.84326 5.44488 7.65015Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask24)">
+                                <rect width="16" height="16" fill="#7F8FA4" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="top-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                                fill="white" fill-opacity="0.01" />
+                            <mask id="mask25" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6"
+                                height="10">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask25)">
+                                <rect width="16" height="16" fill="#7F8FA4" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="car-reviews__wrap">
+                <div class="wrap car-reviews__block">
+                    <div class="car-reviews__top">
+                        <div class="car-reviews__person">
+                            <img src="assets/avatar/woman1.png" alt="Woman">
+                            <div class="car-reviews__person-info">
+                                <p>Dora Riley</p>
+                                <div class="quality">
+                                    <div class="quality__stars">
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="car-reviews__date">25 Dec 2018</p>
+                    </div>
+                    <div class="car-reviews__cont">
+                        <p class="car-reviews__title">Great Perfomance! 👍</p>
+                        <p class="car-reviews__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </p>
+                    </div>
+                </div>
+                <div class="wrap car-reviews__block">
+                    <div class="car-reviews__top">
+                        <div class="car-reviews__person">
+                            <img src="assets/avatar/man2.png" alt="Man">
+                            <div class="car-reviews__person-info">
+                                <p>Milton Reyes</p>
+                                <div class="quality">
+                                    <div class="quality__stars">
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="car-reviews__date">22 Dec 2018</p>
+                    </div>
+                    <div class="car-reviews__cont">
+                        <p class="car-reviews__title">Best Quality 👌</p>
+                        <p class="car-reviews__text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in…
+                        </p>
+                    </div>
+                </div>
+                <div class="wrap car-reviews__block">
+                    <div class="car-reviews__top">
+                        <div class="car-reviews__person">
+                            <img src="assets/avatar/woman2.png" alt="Woman">
+                            <div class="car-reviews__person-info">
+                                <p>Olivia Andrews</p>
+                                <div class="quality">
+                                    <div class="quality__stars">
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                                fill="#E1E8EE" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="car-reviews__date">20 Dec 2018</p>
+                    </div>
+                    <div class="car-reviews__cont">
+                        <p class="car-reviews__title">Too Expensive 😔</p>
+                        <p class="car-reviews__text">
+                            Justo nec ultrices dui sapien eget mi proin. Lectus quam id leo in vitae turpis massa sed.
+                            Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Auctor…
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section relevant-offers">
+        <div class="container">
+            <div class="top-wrap">
+                <h2 class="title">Relevant Offers</h2>
+                <div class="top-arrows">
+                    <a href="#" class="top-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.44488 7.65015L9.4504 3.64484C9.64352 3.45172 9.95679 3.45172 10.1499 3.64484L10.6171 4.11206C10.81 4.30497 10.8102 4.61741 10.6179 4.81073L7.44342 7.9999L10.6177 11.1893C10.8102 11.3826 10.8098 11.695 10.6169 11.8879L10.1497 12.3552C9.95658 12.5483 9.64331 12.5483 9.4502 12.3552L5.44488 8.34965C5.25177 8.15653 5.25177 7.84326 5.44488 7.65015Z"
+                                fill="white" fill-opacity="0.01" />
+                            <mask id="mask7" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6"
+                                height="10">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.44488 7.65015L9.4504 3.64484C9.64352 3.45172 9.95679 3.45172 10.1499 3.64484L10.6171 4.11206C10.81 4.30497 10.8102 4.61741 10.6179 4.81073L7.44342 7.9999L10.6177 11.1893C10.8102 11.3826 10.8098 11.695 10.6169 11.8879L10.1497 12.3552C9.95658 12.5483 9.64331 12.5483 9.4502 12.3552L5.44488 8.34965C5.25177 8.15653 5.25177 7.84326 5.44488 7.65015Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask7)">
+                                <rect width="16" height="16" fill="#7F8FA4" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="top-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                                fill="white" fill-opacity="0.01" />
+                            <mask id="mask8" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="3" width="6"
+                                height="10">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.617 8.34976L6.6116 12.3551C6.41843 12.5483 6.10524 12.5483 5.91209 12.3551L5.44493 11.888C5.25208 11.6951 5.25171 11.3826 5.4441 11.1893L8.61844 7.99999L5.4441 4.81073C5.25171 4.61743 5.25208 4.30489 5.44493 4.11204L5.91209 3.64488C6.10526 3.45171 6.41845 3.45171 6.6116 3.64488L10.617 7.65024C10.8101 7.8434 10.8101 8.15658 10.617 8.34976Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask8)">
+                                <rect width="16" height="16" fill="#7F8FA4" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="cars">
+                <div class="cars__item wrap cars__item_thirteen">
+                    <div class="cars__top">
+                        <a href="#" class="cars__wish cars__wish_top">
+                            <svg width="15" height="15" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask26" width="12" height="12">
+                                    <path
+                                        d="M6.40438 2.71801L5.99997 3.12974L5.59556 2.71801C4.61897 1.72376 3.0589 1.60396 2.0711 2.43624C0.853665 3.46102 0.855868 5.24725 1.88573 6.29824L5.60707 10.0896C5.71347 10.1981 5.85224 10.2569 5.99997 10.2569C6.15078 10.2569 6.28714 10.1996 6.39311 10.0915L10.1135 6.30108C11.1436 5.24788 11.147 3.46199 9.92893 2.43632C8.9404 1.60527 7.38016 1.72459 6.40438 2.71801Z"
+                                        fill="none" stroke="#fff" />
+                                </mask>
+                                <g mask="url(#mask26)">
+                                    <rect width="12" height="12" fill="white" />
+                                </g>
+                            </svg>
+                        </a>
+                        <h3 class="cars__price">
+                            Buy: $98,000
+                        </h3>
+                        <div class="cars__quality">
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <div class="cars__bottom">
+                        <h3 class="cars__title">Porsche 911 2016</h3>
+                        <div class="tags">
+                            <a href="#" class="btn_small btn_tag btn">Coupe</a>
+                            <a href="#" class="btn_small btn_tag btn">Used Car</a>
+                            <a href="#" class="btn_small btn_tag btn">Buy Now</a>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Kilometers:</p>
+                            <p class="cars__value">32,000 km</p>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Location:</p>
+                            <div class="cars__loc">
+                                <img src="assets/flag/usa.svg" alt="The USA">
+                                <p>New-York</p>
+                            </div>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Seller:</p>
+                            <div class="quality">
+                                <div class="quality__stars">
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                </div>
+                                <p class="quality__reviews">(15 Reviews)</p>
+                                <img src="assets/icon/verify.svg" alt="Verified" class="quality__verify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__item wrap cars__item_fourteen">
+                    <div class="cars__top">
+                        <a href="#" class="cars__wish cars__wish_top">
+                            <svg width="15" height="15" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask27" width="12" height="12">
+                                    <path
+                                        d="M6.40438 2.71801L5.99997 3.12974L5.59556 2.71801C4.61897 1.72376 3.0589 1.60396 2.0711 2.43624C0.853665 3.46102 0.855868 5.24725 1.88573 6.29824L5.60707 10.0896C5.71347 10.1981 5.85224 10.2569 5.99997 10.2569C6.15078 10.2569 6.28714 10.1996 6.39311 10.0915L10.1135 6.30108C11.1436 5.24788 11.147 3.46199 9.92893 2.43632C8.9404 1.60527 7.38016 1.72459 6.40438 2.71801Z"
+                                        fill="none" stroke="#fff" />
+                                </mask>
+                                <g mask="url(#mask27)">
+                                    <rect width="12" height="12" fill="white" />
+                                </g>
+                            </svg>
+                        </a>
+                        <h3 class="cars__price">
+                            Bid: $118,000
+                        </h3>
+                        <div class="cars__quality">
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <div class="cars__bottom">
+                        <h3 class="cars__title">Porsche 911 GTS 2016</h3>
+                        <div class="tags">
+                            <a href="#" class="btn_small btn_tag btn">Coupe</a>
+                            <a href="#" class="btn_small btn_tag btn">New Vehicle</a>
+                            <a href="#" class="btn_small btn_tag btn">Buy Now</a>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Kilometers:</p>
+                            <p class="cars__value">0,000 km</p>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Location:</p>
+                            <div class="cars__loc">
+                                <img src="assets/flag/uk.svg" alt="United Kingdom">
+                                <p>London</p>
+                            </div>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Seller:</p>
+                            <div class="quality">
+                                <div class="quality__stars">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                </div>
+                                <p class="quality__reviews">(No reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__item wrap cars__item_fifteen cars__item_hover">
+                    <div class="cars__top">
+                        <a href="#" class="cars__view-detail">
+                            <img src="assets/icon/eye.svg" alt="View Details">
+                            <p>View Details</p>
+                        </a>
+                        <a href="#" class="cars__wish cars__wish_top">
+                            <svg width="15" height="15" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mas11" width="12" height="12">
+                                    <path
+                                        d="M6.40438 2.71801L5.99997 3.12974L5.59556 2.71801C4.61897 1.72376 3.0589 1.60396 2.0711 2.43624C0.853665 3.46102 0.855868 5.24725 1.88573 6.29824L5.60707 10.0896C5.71347 10.1981 5.85224 10.2569 5.99997 10.2569C6.15078 10.2569 6.28714 10.1996 6.39311 10.0915L10.1135 6.30108C11.1436 5.24788 11.147 3.46199 9.92893 2.43632C8.9404 1.60527 7.38016 1.72459 6.40438 2.71801Z"
+                                        fill="none" stroke="#fff" />
+                                </mask>
+                                <g mask="url(#mas11)">
+                                    <rect width="12" height="12" fill="white" />
+                                </g>
+                            </svg>
+                        </a>
+                        <h3 class="cars__price">
+                            Bid: $77,500
+                        </h3>
+                        <div class="cars__quality">
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <div class="cars__bottom">
+                        <h3 class="cars__title">Porsche 911 GT3 RS 2016 </h3>
+                        <div class="tags">
+                            <a href="#" class="btn_small btn_tag btn">Coupe</a>
+                            <a href="#" class="btn_small btn_tag btn">Used Car</a>
+                            <a href="#" class="btn_small btn_tag btn">Auction</a>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Kilometers:</p>
+                            <p class="cars__value">12,000 km</p>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Location:</p>
+                            <div class="cars__loc">
+                                <img src="assets/flag/uk.svg" alt="United Kingdom">
+                                <p>London</p>
+                            </div>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Seller:</p>
+                            <div class="quality">
+                                <div class="quality__stars">
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                </div>
+                                <p class="quality__reviews">(11 Reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars__item wrap cars__item_sixteen">
+                    <div class="cars__top">
+                        <a href="#" class="cars__wish cars__wish_top">
+                            <svg width="15" height="15" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask28" width="12" height="12">
+                                    <path
+                                        d="M6.40438 2.71801L5.99997 3.12974L5.59556 2.71801C4.61897 1.72376 3.0589 1.60396 2.0711 2.43624C0.853665 3.46102 0.855868 5.24725 1.88573 6.29824L5.60707 10.0896C5.71347 10.1981 5.85224 10.2569 5.99997 10.2569C6.15078 10.2569 6.28714 10.1996 6.39311 10.0915L10.1135 6.30108C11.1436 5.24788 11.147 3.46199 9.92893 2.43632C8.9404 1.60527 7.38016 1.72459 6.40438 2.71801Z"
+                                        fill="none" stroke="#fff" />
+                                </mask>
+                                <g mask="url(#mask28)">
+                                    <rect width="12" height="12" fill="white" />
+                                </g>
+                            </svg>
+                        </a>
+                        <h3 class="cars__price">
+                            Bid: $62,000
+                        </h3>
+                        <div class="cars__quality">
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span class="active">$</span>
+                            <span>$</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <div class="cars__bottom">
+                        <h3 class="cars__title">Porsche 911 GT2 RS 2017</h3>
+                        <div class="tags">
+                            <a href="#" class="btn_small btn_tag btn">Coupe</a>
+                            <a href="#" class="btn_small btn_tag btn">Used Car</a>
+                            <a href="#" class="btn_small btn_tag btn">Auction</a>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Kilometers:</p>
+                            <p class="cars__value">3,000 km</p>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Location:</p>
+                            <div class="cars__loc">
+                                <img src="assets/flag/usa.svg" alt="The USA">
+                                <p>Chicago</p>
+                            </div>
+                        </div>
+                        <div class="cars__param">
+                            <p class="cars__param-title">Seller:</p>
+                            <div class="quality">
+                                <div class="quality__stars">
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg class="active" width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9687 5.31013C11.8901 5.06714 11.6746 4.89456 11.4196 4.87158L7.95612 4.55709L6.58655 1.35148C6.48556 1.11655 6.25558 0.964478 6.00005 0.964478C5.74452 0.964478 5.51453 1.11655 5.41355 1.35203L4.04398 4.55709L0.579907 4.87158C0.325385 4.89511 0.110414 5.06714 0.0314018 5.31013C-0.0476101 5.55312 0.0253592 5.81963 0.217899 5.98764L2.83591 8.28365L2.06392 11.6843C2.00743 11.9343 2.10448 12.1928 2.31194 12.3427C2.42346 12.4233 2.55392 12.4643 2.68549 12.4643C2.79892 12.4643 2.91144 12.4337 3.01243 12.3733L6.00005 10.5877L8.98657 12.3733C9.20511 12.5048 9.4806 12.4928 9.6876 12.3427C9.89516 12.1923 9.99212 11.9338 9.93563 11.6843L9.16364 8.28365L11.7816 5.98809C11.9742 5.81963 12.0477 5.55357 11.9687 5.31013V5.31013Z"
+                                            fill="#E1E8EE" />
+                                    </svg>
+                                </div>
+                                <p class="quality__reviews">(14 Reviews)</p>
+                                <img src="assets/icon/verify.svg" alt="Verified" class="quality__verify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
